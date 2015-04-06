@@ -1,6 +1,11 @@
-# Foundation libsass template
+# SGEHRING DESIGN 
+This site uses npm, grunt, Libsass and fountation.
 
-This is a template to start your own project that uses Grunt and libsass!
+  * https://www.npmjs.com
+  * http://gruntjs.com
+  * http://libsass.org
+  * http://foundation.zurb.com/docs/sass.html
+
 
 ## Requirements
 
@@ -10,14 +15,13 @@ You'll need to have the following items installed before continuing.
   * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
   * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
-## Quickstart
+## Quickstart Front End Libraries
 
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
 npm install && bower install
 ```
 
-## NPM Extras
+## NPM Extra Install
  * npm install grunt-bower-concat
  * npm install grunt-contrib-copy
  * npm install grunt-contrib-concat
