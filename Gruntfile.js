@@ -38,6 +38,22 @@ module.exports = function(grunt) {
         }
     },
     
+     // Compress the app.js into app.min.js
+    uglify: {
+        options: {
+            sourceMap: './build/app.min.js.map',
+            mangle: true,
+            compress: {},
+            beautify: false
+        },
+        development: {
+            files: {
+                './build/app.min.js': './build/app.js',
+            }
+        }
+    },
+
+    
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -75,7 +91,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('build', ['copy','bower_concat','sass']);
-  grunt.registerTask('default', ['copy', 'bower_concat', 'build', 'watch'] );   // ['copy', 'uglify', 'concat', 'watch']    ['build','watch']
+  grunt.registerTask('build', ['copy','bower_concat','uglify','sass']);
+  grunt.registerTask('default', ['copy', 'bower_concat','uglify','build', 'watch'] );   // ['copy', 'uglify', 'concat', 'watch']    ['build','watch']
   
 }
