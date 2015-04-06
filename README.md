@@ -18,12 +18,14 @@ npm install && bower install
 ```
 
 ## NPM Extras
+ * npm install grunt-bower-concat
  * npm install grunt-contrib-copy
  * npm install grunt-contrib-concat
  * npm install grunt-contrib-uglify
  
   
 ```bash
+npm install grunt-bower-concat --save-dev
 npm install grunt-contrib-copy --save-dev
 npm install grunt-contrib-concat --save-dev
 npm install grunt-contrib-uglify --save-dev
