@@ -18,16 +18,15 @@ npm install && bower install
 ```
 
 ## NPM Extras
- * npm install grunt-copy
- * npm install grunt-contrib-uglify
+ * npm install grunt-contrib-copy
+ * npm install grunt-contrib-concat
  * npm install grunt-contrib-uglify
  
- 
+  
 ```bash
-npm install grunt-copy --save-dev
+npm install grunt-contrib-copy --save-dev
 npm install grunt-contrib-concat --save-dev
 npm install grunt-contrib-uglify --save-dev
-
 ```
 
 While you're working on your project, run:
