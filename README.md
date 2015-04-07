@@ -1,4 +1,6 @@
 # SGEHRING DESIGN 
+NOTE: My goal is to be moved into wordpress...
+
 This site uses npm, grunt, Libsass and fountation.
 
   * https://www.npmjs.com
