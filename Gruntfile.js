@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     
     bower_concat: {
         all: {
-            dest: 'build/app.js',
+            dest: 'js/frameworks.js',
             //cssDest: 'build/app.css',
             dependencies: {
                 'foundation': ['modernizr', 'jquery'],
@@ -41,14 +41,14 @@ module.exports = function(grunt) {
      // Compress the app.js into app.min.js
     uglify: {
         options: {
-            sourceMap: './build/app.min.js.map',
+            sourceMap: './js/frameworks.min.js.map',
             mangle: true,
             compress: {},
             beautify: false
         },
         development: {
             files: {
-                './build/app.min.js': './build/app.js',
+                './js/frameworks.min.js': './js/frameworks.js',
             }
         }
     },
