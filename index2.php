@@ -8,7 +8,7 @@
     <title>S.Gehring Design</title>
     <link rel="stylesheet" href="css/app.css" type="text/css">
     <link rel="stylesheet" href="lib/GridGallery/css/component.css" type="text/css">
-    <script src="/js/frameworks.min.js" type="text/javascript">
+    <script src="/js/modernizr.js" type="text/javascript">
 </script>
     <style type="text/css">
 
@@ -640,10 +640,14 @@
 
             <p>Donec mi dolor, ornare at vehicula quis, rutrum lacinia elit. Praesent eleifend lorem et luctus euismod. Maecenas nunc ante, rhoncus non lacus vitae, vulputate suscipit elit. Curabitur cursus, augue eu varius consequat, metus purus faucibus lorem, id accumsan ex nisl sed arcu. Duis mattis finibus tempor. Vivamus ac felis lobortis nisl dictum dignissim. Vestibulum fringilla nulla in magna ultrices, non vulputate magna consectetur. Vivamus eleifend enim quis aliquam laoreet.</p>
         </div>
-    </section><script src="lib/gridgallery/js/imagesloaded.pkgd.min.js" type="text/javascript">
-</script><script src="lib/gridgallery/js/masonry.pkgd.min.js" type="text/javascript">
-</script><script src="lib/gridgallery/js/classie.js" type="text/javascript">
-</script><script src="lib/gridgallery/js/cbpGridGallery.js" type="text/javascript">
-</script><script src="/js/app.js" type="text/javascript"></script>
+    </section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="lib/gridgallery/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+<script src="lib/gridgallery/js/masonry.pkgd.min.js" type="text/javascript"></script>
+<script src="lib/gridgallery/js/classie.js" type="text/javascript"></script>
+<script src="lib/gridgallery/js/cbpGridGallery.js" type="text/javascript"></script>
+<script src="/js/app.js" type="text/javascript"></script>
 </body>
 </html>

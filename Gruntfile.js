@@ -15,6 +15,12 @@ module.exports = function(grunt) {
         src: ['jquery.min.js'],
         dest: 'js/',
       },
+      jqueryMap: {
+        expand: true,
+        cwd: 'bower_components/jquery/dist/',
+        src: ['jquery.min.map'],
+        dest: 'js/',
+      },
       foundation: {
         expand: true,
         cwd: 'bower_components/foundation/js/',
@@ -38,7 +44,6 @@ module.exports = function(grunt) {
         }
     },
     
-     // Compress the app.js into app.min.js
     uglify: {
         options: {
             sourceMap: './js/frameworks.min.js.map',
@@ -52,7 +57,6 @@ module.exports = function(grunt) {
             }
         }
     },
-
     
     sass: {
       options: {
@@ -68,7 +72,7 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    
     watch: {
       grunt: {
         options: {
@@ -89,9 +93,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-concat-css');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('build', ['copy','bower_concat','uglify','sass']);
-  grunt.registerTask('default', ['copy', 'bower_concat','uglify','build', 'watch'] );   // ['copy', 'uglify', 'concat', 'watch']    ['build','watch']
+  grunt.registerTask('build', [ 'copy','bower_concat','uglify','sass'  ]); //'concat_css'
+  grunt.registerTask('default', [ 'copy', 'bower_concat','uglify','build', 'watch' ] );   // ['copy', 'uglify', 'concat', 'watch']    ['build','watch']
   
 }
